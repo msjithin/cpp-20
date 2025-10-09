@@ -91,6 +91,10 @@ This is a list of any major frameworks/libraries used to bootstrap my project.
 
 ### Prerequisites
 
+I am using VS Code for this project.
+Set "cppStandard": "gnu++20" in c_cpp_properties.json.
+
+You can access it by Ctrl+Shift+P, then select C/C++: Edit Configurations (JSON).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -103,7 +107,8 @@ This is a list of any major frameworks/libraries used to bootstrap my project.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-
+Each folder will have make file for generating executable. 
+Run `make` to generate the executable and do `./executable_name`.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -115,8 +120,8 @@ This is a list of any major frameworks/libraries used to bootstrap my project.
 
 Key Focus Areas:  
 This project centers around practical implementation of major C++20 features:
-- [ ] Parallel Algorithms (<execution>): Implementing classic algorithms (like Monte Carlo, sorting, transformations) using execution policies (std::execution::par, std::execution::par_unseq) to leverage multi-core CPUs and potential GPU offloading.
 - [ ] Concepts (Concepts): Utilizing and defining custom concepts to enforce compile-time constraints, leading to clearer error messages and more robust template code.
+- [ ] Parallel Algorithms (<execution>): Implementing classic algorithms (like Monte Carlo, sorting, transformations) using execution policies (std::execution::par, std::execution::par_unseq) to leverage multi-core CPUs and potential GPU offloading.
 - [ ] Modules (Modules): Experimenting with the new module system to eliminate header files, drastically improve compilation times, and better structure larger projects.
 - [ ] Coroutines (Coroutines): Exploring asynchronous programming patterns for efficient I/O, event loops, and generator functions.
 - [ ] Ranges (Ranges): Applying range-based operations to write more declarative, cleaner, and composable code, especially for data manipulation pipelines.
