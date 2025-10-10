@@ -107,25 +107,29 @@ You can access it by Ctrl+Shift+P, then select C/C++: Edit Configurations (JSON)
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-Each folder will have make file for generating executable. 
-Run `make` to generate the executable and do `./executable_name`.
 
+Each folder will have CMakeLists.txt file for configuration and compilation. Once you are in a folder, you can go through teh following steps.
+* Configuration/Generation Phase: `cmake .`
+* Build/Compilation Phase: `cmake --build .`
+
+Run `./main` to execute.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- ROADMAP -->
 ## Roadmap
 
 Key Focus Areas:  
 This project centers around practical implementation of major C++20 features:
-- [ ] Concepts (Concepts): Utilizing and defining custom concepts to enforce compile-time constraints, leading to clearer error messages and more robust template code.
+- [x] Concepts (Concepts): Utilizing and defining custom concepts to enforce compile-time constraints, leading to clearer error messages and more robust template code.
+- [x] Ranges (Ranges): Applying range-based operations to write more declarative, cleaner, and composable code, especially for data manipulation pipelines.
 - [ ] Parallel Algorithms (<execution>): Implementing classic algorithms (like Monte Carlo, sorting, transformations) using execution policies (std::execution::par, std::execution::par_unseq) to leverage multi-core CPUs and potential GPU offloading.
 - [ ] Modules (Modules): Experimenting with the new module system to eliminate header files, drastically improve compilation times, and better structure larger projects.
 - [ ] Coroutines (Coroutines): Exploring asynchronous programming patterns for efficient I/O, event loops, and generator functions.
-- [ ] Ranges (Ranges): Applying range-based operations to write more declarative, cleaner, and composable code, especially for data manipulation pipelines.
 - [ ] And more.
+
+- [ ] A project combining all these.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
