@@ -1,6 +1,7 @@
 --- Compilation Outputs ---
-Executables (like 'basics' from the Makefile)
+Executables (like 'main' from the Makefile)
 basics
+main
 
 Object files
 *.o
